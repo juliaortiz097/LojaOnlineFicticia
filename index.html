@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ortiz</title>
+
+    <!-- ícone na aba  -->
+    <link rel="shortcut icon" href="./images/bag.svg" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+
+    <!-- BS Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- Chamada da CSS do BS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!-- Minha CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+
+    <header class="container mt-4">
+        <!-- menu principal  -->
+        <nav class="navbar navbar-expand-lg">
+            <!-- aparece o sanduiche só em tela pequena: navbar-expand-lg -->
+            <div class="container-fluid">
+                <a class="navbar-brand logo-menu" href="#">
+                    <!-- ícone do lado no ortiz pelo bootstrap: -->
+                    <i class="bi bi-bag me-1"></i>Ortiz</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- substitui o texto pelo ícone hamburguer  -->
+                    <i class="bi bi-list"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Nossa história</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- href="#" é para tranformar o texto em link  -->
+                            <a class="nav-link" href="#">Meu carrinho</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mb-4">
+
+        <article class="row p-5 d-flex align-items-center">
+            <section class="col-md-6 my-3">
+                <h1 class="display-1 text-blue">Compras online</h1>
+                <p class="lead my-4">Ortiz, seu paraíso de compras online. Aqui vendemos de tudo um pouco e sempre buscamos suprir as necessidades de nosso clinetes</p>
+                <a href="" class="btn btn-outline-dark btn-sm">Mais Informações
+                    <i class="bi bi-arrow-down-circle ms-1 icon-position"></i>
+                </a>
+            </section>
+
+            <figure class="col-md-6 my-3">
+                <img src="./images/price-animate.svg" alt="Imagem de um ChatBot" class="img-fluid">
+            </figure>
+        </article>
+
+
+        <!-- tabela  -->
+        <h2 class="text-blue">Produtos</h2>
+        <!-- ter barra de rolagem na tabela em telas pequenas = table-responsive -->
+        <section class="my-4 table-responsive">
+
+            <table class="table table-bordered table-striped table-hover">
+                <!-- cabeçalho  -->
+                <thead class="table-primary">
+                    <!-- tr cria linha -->
+                    <tr>
+                        <!-- colona é th -->
+                        <th>À venda</th>
+                        <th>Fabricante</th>
+                        <th>Material</th>
+                        <th>Preço</th>
+                        <th>Prazo de entrega</th>
+                    </tr>
+                </thead>
+
+                <!-- corpo da tabela  -->
+                <tbody>
+                    <tr>
+                        <!-- linha em cada coluna = td -->
+                        <td>Potes</td>
+                        <td>Tupperware</td>
+                        <td>Acrílico</td>
+                        <td>R$40,00</td>
+                        <td>15 dias</td>
+                    </tr>
+
+                    <tr>
+                        <td>Kit Skin Care</td>
+                        <td>Beyoung</td>
+                        <td>Labxx</td>
+                        <td>R$100,00</td>
+                        <td>30 dias</td>
+                    </tr>
+                    <tr>
+                        <td>Perfume</td>
+                        <td>Boticário</td>
+                        <td>Ecoxx</td>
+                        <td>R$150,00</td>
+                        <td>20 dias</td>
+                    </tr>
+
+                    <tr>
+                        <td>Protetor Solar</td>
+                        <td>La Roche</td>
+                        <td>Labxx</td>
+                        <td>R$80,00</td>
+                        <td>5 dias</td>
+                    </tr>
+                     <tr>
+                        <td>Maquiagem</td>
+                        <td>Mari Maria</td>
+                        <td>Ecoxx</td>
+                        <td>R$40,00</td>
+                        <td>15 dias</td>
+                    </tr>
+
+                    <tr>
+                        <td>Kit SkinCare</td>
+                        <td>PRINCIPIA</td>
+                        <td>Labxx</td>
+                        <td>R$100,00</td>
+                        <td>30 dias</td>
+                    </tr>
+                    
+
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td colspan="5">Dados atualizados: 18/08/2023</td>
+                    </tr>
+                </tfoot> 
+
+            </table>
+        </section>
+
+        <h2 class="text-blue">Produtos mais vendidos</h2>
+
+        <!-- cards e grid -->
+        <section class="my-4 row">
+
+            <!-- 1o. card -->
+            <div class="col-md-6 col-lg-3 my-2">
+                <div class="card">
+                    <img src="./images/pexels-alex-kinkate-208052.jpg" class="card-img-top" alt="Maquiagens">
+                    <div class="card-body">
+                        <h5 class="card-title">Maquiagens</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ipsam nisi error!</p>
+                        <a href="#" class="btn btn-outline-dark">Mais Imagens</a>
+                    </div>
+                </div>
+            </div>
+
+             <!-- 2o. card -->
+             <div class="col-md-6 col-lg-3 my-2">
+                <div class="card">
+                    <img src="./images/pexels-ella-olsson-1640768.jpg" class="card-img-top" alt="Potes">
+                    <div class="card-body">
+                        <h5 class="card-title">Potes</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ipsam nisi error!</p>
+                        <a href="#" class="btn btn-outline-dark">Mais Imagens</a>
+                    </div>
+                </div>
+            </div>
+
+             <!-- 3o. card -->
+             <div class="col-md-6 col-lg-3 my-2">
+                <div class="card">
+                    <img src="./images/pexels-mathilde-langevin-10897815.jpg" class="card-img-top" alt="Joias">
+                    <div class="card-body">
+                        <h5 class="card-title">Joias</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ipsam nisi error!</p>
+                        <a href="#" class="btn btn-outline-dark">Mais Imagens</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4o. card -->
+            <div class="col-md-6 col-lg-3 my-2">
+                <div class="card">
+                    <img src="./images/pexels-natalia-hawthorne-3785147.jpg" class="card-img-top" alt="Kit SkinCare">
+                    <div class="card-body">
+                        <h5 class="card-title">Kit SkinCare</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ipsam nisi error!</p>
+                        <a href="#" class="btn btn-outline-dark">Mais Imagens</a>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <h2 class="text-blue">Galeria de imagens</h2>
+        <!-- imagem maior:  -->
+        <section class="row my-4 d-flex align-items-center">
+            <div class="col-md-6 my-2">
+                <img src="./images/pexels-valeria-boltneva-965989.jpg" alt="Imagem de perfumes" class="img-fluid rounded">
+            </div>
+             <!-- imagens em grade 2x2:  -->
+            <div class="col-md-6 my-2">
+                <div class="row">
+                    <div class="col-6 my-2">
+                        <img src="./images/pexels-alex-kinkate-208052.jpg" alt="Imagem de maquiagens" class="rounded img-fluid">
+                    </div>
+                    <div class="col-6 my-2">
+                        <img src="./images/pexels-ella-olsson-1640768.jpg" alt="Imagem de potes" class="rounded img-fluid">
+                    </div>
+                    <div class="col-6 my-2">
+                        <img src="./images/pexels-mathilde-langevin-10897815.jpg" alt="Imagem de joias" class="rounded img-fluid">
+                    </div>
+                    <div class="col-6 my-2">
+                        <img src="./images/pexels-natalia-hawthorne-3785147.jpg" alt="Imagem de Kit SkinCare" class="rounded img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- Chamada do JS do BS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
