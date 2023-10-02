@@ -66,7 +66,7 @@
 
         <article class="row p-5 d-flex align-items-center">
             <section class="col-md-6 my-3">
-                <h1 class="display-1 text-blue">Compras online</h1>
+                <h1 class="display-1 text-">Compras online</h1>
                 <p class="lead my-4">Ortiz, seu paraíso de compras online. Aqui vendemos de tudo um pouco e sempre buscamos suprir as necessidades de nosso clinetes</p>
                 <a href="" class="btn btn-outline-dark btn-sm">Mais Informações
                     <i class="bi bi-arrow-down-circle ms-1 icon-position"></i>
@@ -215,12 +215,12 @@
         </section>
 
         <h2 class="text-blue">Galeria de imagens</h2>
-        <!-- imagem maior:  -->
+<!-- imagem maior:  -->
         <section class="row my-4 d-flex align-items-center">
             <div class="col-md-6 my-2">
                 <img src="./images/pexels-valeria-boltneva-965989.jpg" alt="Imagem de perfumes" class="img-fluid rounded">
             </div>
-             <!-- imagens em grade 2x2:  -->
+<!-- imagens em grade 2x2:  -->
             <div class="col-md-6 my-2">
                 <div class="row">
                     <div class="col-6 my-2">
@@ -239,6 +239,92 @@
             </div>
         </section>
 
+        <h2 class="text-blue">Contato</h2>
+        <section>
+<!-- id e name = campos de identificação  -->
+<!-- o get em metodo é usado para pesquisa e você tem a visualização dos dados -->
+<!-- o post em metodo você não ve as infos -->
+            <form id="dados" name="dados" method="get" action="">
+
+                <div class="row">
+
+<!-- 1° campo - grid  -->
+                    <div class="col-md-4 my-2">
+                        <label for="nome" class="form-label">Nome</label>
+<!-- placeholder é o texto que aparece antes de escrever algo  -->
+                        <input type="text" class="form-control" id="nome" 
+                        name="nome" placeholder="Ex.: Maria da Graça" 
+                        minlength="10" maxlength="12" required>
+                    </div>
+                    
+                    <div class="col-md-4 my-2">
+                        <label for="" class="form-label">Senha</label>
+                        <input type="password" id="Senha" class="form-control"placeholder="Ex.: @7530489Ki" minlength="6" maxlength="15" required>    
+                    </div>
+
+                    <div class="col-md-4 my-2">
+                        <label for="data" class="form-label">Formação</label>
+<!-- type "date" que coloca o calendario  -->
+                        <input type="date" class="form-control">
+                    </div>
+<!-- fazendo opcões:  -->
+                    <div class="col-md-4 my-2">
+                        <label for="produtos" class="form-label">Produtos</label>
+                        <select name="produtos" id="produtos" class="form-select">
+<!-- frase inicial:  
+o *disabled selected* mostra a frase selecionada mas não da para selecionar novamente -->
+                            <option value="0" disabled selected>Selecione o tipo de produto que deseja</option>
+<!-- opções:  -->
+                            <option value="1">Maquiagem</option>
+                            <option value="2">Produtos skin care</option>
+                            <option value="3">Joais</option>
+                            <option value="4">Perfumes</option>
+                            <option value="5">Roupas</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-4 my-2">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="text" id="email" class="form-control" name="email"
+                        placeholder="Ex.: maria@ortizlojas.com" required>    
+                    </div>
+
+                    <div class="col-md-4 my-2">
+                        <p>Sexo</p>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                            <label class="form-check-label" for="inlineRadio1">F</label>
+                          </div>
+
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                            <label class="form-check-label" for="inlineRadio2">M</label>
+                          </div>
+
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                            <label class="form-check-label" for="inlineRadio3">Outros</label>
+                          </div>
+                    </div>
+
+                    <div class="col my-2">
+                        <label for="Mensagem"
+                        class="form-label">Mensagem:</label>
+                        <textarea name="Mensagem" id="Mensagem"
+                        placeholder="Ex: Dados complementares"
+                        class="form-control"></textarea>
+                    </div>
+                  
+
+                    <div class="my-4 d-flex justify-content-end">
+                        <button type="submit" class="btn btn-primary">Criar conta</button>
+                    </div>
+
+
+                
+                </div>
+            </form>
+        </section>
 
     </main>
 
